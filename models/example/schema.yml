@@ -9,7 +9,7 @@ models:
         description: "The primary key for this table"
         tests:
           - unique
-          
+
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
@@ -25,5 +25,13 @@ models:
     columns:
       - name: nav_month
         description: "month for each scheme"
+        tests:
+          - not_null
+
+  - name: milestone1ii
+    description: "max and min value acc to date"
+    columns:
+      - name: nav_date
+        description: "date for each scheme"
         tests:
           - not_null
