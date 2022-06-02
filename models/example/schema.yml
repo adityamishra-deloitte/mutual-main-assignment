@@ -35,3 +35,11 @@ models:
         description: "date for each scheme"
         tests:
           - not_null
+
+  - name: milestone3iii
+    description: "data studio"
+    columns:
+      - name: cat_id
+        description: "category id"
+        tests:
+          - not_null
